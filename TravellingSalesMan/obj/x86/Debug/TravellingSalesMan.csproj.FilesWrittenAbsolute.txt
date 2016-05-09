@@ -1,5 +1,0 @@
-/media/krystal/Content/Code/C#/TravellingSalesMan/TravellingSalesMan/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/media/krystal/Content/Code/C#/TravellingSalesMan/TravellingSalesMan/bin/Debug/TravellingSalesMan.exe.mdb
-/media/krystal/Content/Code/C#/TravellingSalesMan/TravellingSalesMan/bin/Debug/TravellingSalesMan.exe
-/media/krystal/Content/Code/C#/TravellingSalesMan/TravellingSalesMan/obj/x86/Debug/TravellingSalesMan.exe
-/media/krystal/Content/Code/C#/TravellingSalesMan/TravellingSalesMan/obj/x86/Debug/TravellingSalesMan.exe.mdb
