@@ -14,7 +14,7 @@ namespace TravellingSalesMan.Pathing {
 			//arbitralily pick a starting node.
 			Node currentNode = nodes [ Utilities.GetRndInt ( nodes.Count ) ];
 			path.Add ( currentNode );
-			while ( !path.Count == nodes.Count ) {
+			while ( !( path.Count == nodes.Count ) ) {
 				currentNode.Equals ( currentNode.FindNearestNode ( nodes ) );
 			}
 		}
