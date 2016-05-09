@@ -6,15 +6,18 @@ namespace TravellingSalesMan.Pathing {
 		private List<Node> nodes;
 		private List<Node> path;
 
-		public Route ( ) {
+		public List<Node> Path { get { return path; } }
 
+		public Route ( List<Node> nodes ) {
+			this.nodes = nodes;
+			path = CreatePath ( );
 		}
 
-		public List<Node> CreatePath ( ) {
+		private List<Node> CreatePath ( ) {
 			//arbitralily pick a starting node.
 			Node currentNode = nodes [ Utilities.GetRndInt ( nodes.Count ) ];
 			path.Add ( currentNode );
-			while ( !( path.Count == nodes.Count ) ) {
+			while ( path.Count != nodes.Count ) {
 				currentNode.Equals ( currentNode.FindNearestNode ( nodes ) );
 			}
 		}
