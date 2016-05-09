@@ -38,6 +38,12 @@ namespace TravellingSalesMan {
 
 			Console.WriteLine ( Utilities.GetRndFloat ( ) );
 			Console.WriteLine ( Utilities.GetRndFloat ( ) );
+
+			Console.WriteLine ( "Creating New Map" );
+			Map m = new Map ( );
+			foreach ( Node n in m.route.Path ) {
+				Console.WriteLine ( "Node :" + n.Location.ToString ( ) );
+			}
 		}
 	}
 }

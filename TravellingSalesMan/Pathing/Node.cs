@@ -16,9 +16,12 @@ namespace TravellingSalesMan.Pathing {
 			NearestNode = null;
 		}
 
-		public void FindNearestNode ( List<Node> nodes ) {
+		public Node FindNearestNode ( List<Node> nodes ) {
 			TapeMeasure tm = new TapeMeasure ( );
+			Console.WriteLine ( "Of Nodes: " );
+
 			foreach ( Node n in nodes ) {
+				Console.WriteLine ( n.Location.ToString ( ) );
 				if ( n.Equals ( this ) ) {
 					continue;
 				}
@@ -41,6 +44,8 @@ namespace TravellingSalesMan.Pathing {
 					}
 				}
 			}
+			Console.WriteLine ( NearestNode.Location.ToString ( ) + " is the nearest node." );
+			return NearestNode;
 		}
 
 		public override bool Equals ( Object obj ) {

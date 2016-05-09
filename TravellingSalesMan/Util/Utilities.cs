@@ -8,7 +8,7 @@ namespace TravellingSalesMan {
 			return (float) rnd.NextDouble ( );
 		}
 
-		public static object GetRndInt ( int count ) {
+		public static int GetRndInt ( int count ) {
 			return rnd.Next ( count );
 		}
 	}

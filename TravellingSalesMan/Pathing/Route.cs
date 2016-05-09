@@ -14,12 +14,15 @@ namespace TravellingSalesMan.Pathing {
 		}
 
 		private List<Node> CreatePath ( ) {
+			List<Node> tmpNodeList = new List<Node> ( );
 			//arbitralily pick a starting node.
 			Node currentNode = nodes [ Utilities.GetRndInt ( nodes.Count ) ];
-			path.Add ( currentNode );
-			while ( path.Count != nodes.Count ) {
+			tmpNodeList.Add ( currentNode );
+			while ( tmpNodeList.Count != nodes.Count ) {
 				currentNode.Equals ( currentNode.FindNearestNode ( nodes ) );
+				tmpNodeList.Add ( currentNode );
 			}
+			return tmpNodeList;
 		}
 	}
 }

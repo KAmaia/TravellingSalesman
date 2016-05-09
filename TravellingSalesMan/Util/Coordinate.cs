@@ -12,6 +12,10 @@ namespace TravellingSalesMan.Util {
 			Y = y;
 		}
 
+		public override string ToString ( ) {
+			return string.Format ( "[Coordinate @ {0}, {1}]", X, Y );
+		}
+
 		public bool Equals ( Coordinate c ) {
 			return X == c.X && Y == c.Y;
 		}

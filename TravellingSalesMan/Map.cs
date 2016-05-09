@@ -7,7 +7,9 @@ using TravellingSalesMan.Util;
 namespace TravellingSalesMan {
 	public class Map {
 		private List<Node> nodes;
-		private Route route = new Route ( );
+
+		public Route route { get; private set; }
+
 
 		public Map ( ) {
 			nodes = new List<Node> ( );
@@ -16,6 +18,8 @@ namespace TravellingSalesMan {
 			nodes.Add ( new Node ( new Coordinate ( 3, 2 ) ) );
 			nodes.Add ( new Node ( new Coordinate ( 3, 3 ) ) );
 			nodes.Add ( new Node ( new Coordinate ( 3, 4 ) ) );
+		
+			route = new Route ( nodes );
 		}
 	}
 }
